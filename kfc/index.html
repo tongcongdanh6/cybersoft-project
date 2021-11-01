@@ -51,7 +51,12 @@
 
         .menu__content {
             margin: auto;
-            width: 70%;
+            width: 50%;
+        }
+
+        .menu__content td, th {
+            padding-bottom: 20px;
+            padding-top: 20px;
         }
 
         .menu__content--bgPic1 {
@@ -61,16 +66,27 @@
         .menu__content--bgPic2 {
             background: url("img/blacktea.jpg") no-repeat;
         }
+
         .menu__content--bgPic3 {
             background: url("img/olongtea.jpg") no-repeat;
+        }
+
+        .menu__content--bgPic4 {
+            background: url("img/fruit.jpg") no-repeat;
+        }
+
+        .menu__content--bgPic5 {
+            background: url("img/milktea.png") no-repeat;
         }
 
         .menu__content--right {
             text-align: right;
         }
+
         .menu__content--left {
             text-align: left;
         }
+
         .menu__content--center {
             text-align: center;
         }
@@ -110,7 +126,7 @@
             cho người tiêu dùng trên toàn thế giới có thể thưởng thức hơn 300 món ăn khác nhau từ món gà nướng tại thị
             trường Việt Nam cho tới sandwich cá hồi tại Nhật Bản.
         </p>
-        <img src="img/about-pic-1.png" alt="about kfc">
+        <img src="img/about-pic-1.png" alt="about kfc" style="width: 50%;">
     </section>
     <!-- ./ About 1 -->
 
@@ -128,24 +144,24 @@
                 <li>Tháng 11/2009 - Đà Nẵng</li>
             </ul>
         </p>
-        <img src="img/about-pic-3.png" alt="about kfc 2">
+        <img src="img/about-pic-3.png" alt="about kfc 2" style="width: 50%;">
     </section>
     <!-- ./ About 2 -->
 
     <!-- Menu -->
     <section id="menu">
         <h2 class="menu__title">Bảng Giá Nước đi kèm của KFC</h2>
-        <table border="1" class="menu__content" cellpadding="15px">
+        <table border="1" class="menu__content" cellpadding="10px">
             <thead>
                 <tr>
-                    <th><b>Name</b></th>
+                    <th colspan="2"><b>Name</b></th>
                     <th><b>Type</b></th>
                     <th><b>Price</b></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="menu__content--bgPic1 menu__content--right" rowspan="2">Green Tea</td>
+                    <td class="menu__content--bgPic1 menu__content--right" rowspan="2" colspan="2">Green Tea</td>
                     <td>Hot</td>
                     <td rowspan="2" class="menu__content--center">25.000 vnd</td>
                 </tr>
@@ -154,7 +170,7 @@
                 </tr>
 
                 <tr>
-                    <td class="menu__content--bgPic2 menu__content--center" rowspan="2">Black Tea</td>
+                    <td class="menu__content--bgPic2 menu__content--center" rowspan="2" colspan="2">Black Tea</td>
                     <td>Hot</td>
                     <td rowspan="2" class="menu__content--center">28.000 vnd</td>
                 </tr>
@@ -163,13 +179,43 @@
                 </tr>
 
                 <tr>
-                    <td class="menu__content--bgPic3 menu__content--left" rowspan="2">Olong Tea</td>
+                    <td class="menu__content--bgPic3 menu__content--left" rowspan="2" colspan="2">Olong Tea</td>
                     <td>Hot</td>
                     <td rowspan="2" class="menu__content--center">30.000 vnd</td>
                 </tr>
                 <tr>
                     <td class="menu__content--right">Cold</td>
                 </tr>
+
+                <tr>
+                    <td class="menu__content--bgPic4 menu__content--center" rowspan="3" style="width: 20%;">Fruit Tea</td>
+                    <td>Lemon Tea</td>
+                    <td class="menu__content--center" rowspan="3">Cold (only)</td>
+                    <td class="menu__content--center">30.000 vnd</td>
+                </tr>          
+                <tr>
+                    <td>Apple Tea</td>
+                    <td class="menu__content--center" rowspan="2">35.000 vnd</td>
+                </tr>                
+                <tr>
+                    <td>Peach Tea</td>
+                </tr>
+
+                <tr>
+                    <td class="menu__content--bgPic5 menu__content--center" rowspan="3" style="width: 20%;">Milk Tea</td>
+                    <td>Green Milk Tea</td>
+                    <td class="menu__content--left" rowspan="3">Hot</td>
+                    <td class="menu__content--left">27.000 vnd</td>
+                </tr>          
+                <tr>
+                    <td>Black Milk Tea</td>
+                    <td class="menu__content--left">30.000 vnd</td>
+                </tr>                
+                <tr>
+                    <td>Olong Milk Tea</td>
+                    <td class="menu__content--left">32.000 vnd</td>
+                </tr>
+
             </tbody>
         </table>
     </section>
