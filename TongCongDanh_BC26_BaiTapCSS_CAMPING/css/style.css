@@ -1,0 +1,268 @@
+:root {
+  --grey: #908d8d;
+  --light-grey: #e8e8e8;
+  --orange: #e76f51;
+  --light-orange: #f9e1db;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faf4f3;
+}
+
+.clear {
+  clear: both;
+}
+.img-fluid {
+  max-width: 100%;
+}
+
+.header {
+  background-color: #f9e2dc;
+  padding: 20px 50px 20px 50px;
+}
+
+.header__navigation a {
+  color: #4b4643;
+  text-decoration: none;
+  padding: 20px 20px 20px 0;
+}
+
+.header__navigation a.active,
+a:hover {
+  color: #e76f51;
+}
+
+.carousel {
+  position: relative;
+  background: url("../img/BG.png") no-repeat center;
+  background-size: cover;
+  height: 700px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.carousel__content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  width: 100%;
+  bottom: -100px;
+}
+
+.carousel__item {
+  background-color: #fff;
+  color: var(--grey);
+  border-radius: 15px;
+  height: 100%;
+  bottom: -100px;
+  text-align: center;
+  padding: 50px;
+  margin: 0 20px 0 20px;
+}
+
+.carousel__item h2 {
+  font-size: 18px;
+}
+
+.activities {
+  padding-top: 200px;
+  padding-bottom: 20px;
+}
+.activities__title {
+  text-align: center;
+  color: var(--grey);
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.activities__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.activities__item {
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 30px;
+  width: 22%;
+  margin: 0 20px 30px 20px;
+  border-radius: 30px;
+}
+
+.activities__item h3 {
+  padding: 20px 0 10px 0;
+}
+.activities__item p {
+  color: var(--grey);
+  line-height: 2;
+  margin-bottom: 10px;
+}
+
+.activities__thumbnail {
+  text-align: center;
+  position: relative;
+}
+
+
+.activities__thumbnail i {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  font-size: 20px;
+  color: var(--orange);
+}
+
+
+.activities__item img {
+  border-radius: 25px;
+  max-width: 100%;
+}
+
+.activities__item button {
+  background-color: var(--light-grey);
+  padding: 15px 60px 15px 60px;
+  color: var(--grey);
+  font-size: 20px;
+  border: 0;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+.activities__item button:hover {
+  background-color: var(--grey);
+  color: #fff;
+}
+
+.activities__viewall {
+  text-align: center;
+}
+
+.activities__viewall button {
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  padding: 15px 80px 15px 80px;
+  border-radius: 200px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.activities__viewall button:hover {
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.contact {
+  background-color: var(--light-orange);
+  overflow: auto;
+}
+
+.contact__right-content {
+  width: 50%;
+  float: left;
+  padding: 50px;
+  color: var(--grey);
+  line-height: 2;
+}
+
+.contact__right-content h3 {
+  font-size: 25px;
+}
+
+.contact__right-content p {
+  font-size: 16px;
+}
+
+.contact__download-app {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.contact__download-app h4 {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.contact__followus {
+  height: 100%;
+  float:left;
+  width: 50%;
+}
+.contact__followus h4 {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.contact__followus i {
+  cursor: pointer;
+  color: var(--orange);
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.contact__left-content {
+  width: 50%;
+  background: url("../img/mask.png");
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: var(--light-orange);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  padding: 50px;
+}
+
+.footer h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.footer__content {
+  display: flex;
+}
+
+.footer__item-1 {
+  width: 40%;
+  padding-right: 100px;
+  text-align: justify;
+  line-height: 2;
+}
+
+.footer__item-2 {
+  width: 20%;
+}
+
+.footer__item-2 ul li {
+  list-style: none;
+  line-height: 2;
+}
+
+.footer__item-2 ul li a {
+  text-decoration: none;
+  color: #3b3838;
+}
+
+.footer__item-2 ul li a:hover {
+  color: var(--orange);
+}
+
+.footer__copyright {
+  margin-top: 50px;
+  text-align: center;
+}
