@@ -161,7 +161,6 @@ body {
 
 .intro {
     background-color: rgba(0, 0, 0, 0.01);
-    height: 1000px;
     padding: 0 250px;
 }
 
@@ -211,4 +210,44 @@ body {
 .intro__welcome-right-content {
     float: right;
     width: 50%;
+}
+
+.intro__department {
+    padding: 150px 0;
+}
+
+.intro__department-item {
+    float: left;
+    width: 25%;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.intro__department-content {
+    color: #fff;
+    text-align: center;
+    background-color: #012047;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.intro__department-content i {
+    font-size: 40px;
+}
+
+.intro__department-content p {
+    padding: 15px 0;
+}
+
+.intro__stat {
+    background-color: #f6f6f6;
+}
+
+.intro_stat-item {
+    float: left;
+    width: 25%;
+}
+
+.intro__stat-counter {
+    font-size: 50px;
+    font-weight: bold;
 }
