@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tống Công Danh - BC26 - Bài tập CSS - Mastery</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 </head>
@@ -13,31 +13,35 @@
 <body>
     <section class="header">
         <div class="header__contact">
-            <div class="header__contact-left">
-                <div class="header__contact-icons">
-                    <i class="fas fa-phone-alt"></i> +142 5897555
+            <div class="container">
+                <div class="header__contact-left">
+                    <div class="header__contact-icons">
+                        <i class="fas fa-phone-alt"></i> +142 5897555
+                    </div>
+                    <div class="header__contact-icons">
+                        <i class="far fa-envelope"></i> info@example.com
+                    </div>
                 </div>
-                <div class="header__contact-icons">
-                    <i class="far fa-envelope"></i> info@example.com
+                <div class="header__contact-right">
+                    <a href="#apply" class="header__contact-applynow">Apply Now</a>
                 </div>
+                <div class="clear"></div>
             </div>
-            <div class="header__contact-right">
-                <a href="#apply" class="header__contact-applynow">Apply Now</a>
-            </div>
-            <div class="clear"></div>
         </div>
         <div class="header__nav">
-            <div class="header__nav-brand">
-                <div class="header__nav-logo">
-                    <i class="fas fa-edit"></i>
+            <div class="container">
+                <div class="header__nav-brand">
+                    <div class="header__nav-logo">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h1>Mastery</h1>
                 </div>
-                <h1>Mastery</h1>
-            </div>
-            <div class="header__nav-menu">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
+                <div class="header__nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </div>
         </div>
     </section>
@@ -47,7 +51,7 @@
             <div class="carousel__overlay"></div>
         </div>
         <div class="carousel__features">
-            <div class="carousel__features-container">
+            <div class="container">
                 <div class="carousel__features-item">
                     <div class="carousel__features-content">
                         <i class="fas fa-laptop"></i>
@@ -80,7 +84,7 @@
     </section>
 
     <section class="intro">
-        <div class="intro__welcome">
+        <div class="intro__welcome container">
             <div class="intro__welcome-left-content">
                 <h2>Welcome To Our Campus</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus magnam modi sint non delectus
@@ -102,106 +106,111 @@
         </div>
 
         <div class="intro__department">
-            <div class="intro__department-item">
-                <div class="intro__department-content">
-                    <i class="fas fa-male"></i>
-                    <p>Socioligy</p>
-                </div>
-            </div>
-            <div class="intro__department-item">
-                <div class="intro__department-content">
-                    <i class="fas fa-suitcase"></i>
-                    <p>Bussiness</p>
-                </div>
-            </div>
-            <div class="intro__department-item">
-                <div class="intro__department-content">
-                    <i class="fas fa-code"></i>
-                    <p>Web Dev</p>
-                </div>
-            </div>
-            <div class="intro__department-item">
-                <div class="intro__department-content">
-                    <i class="fas fa-flask"></i>
-                    <p>Science</p>
-                </div>
-            </div>
-            <div class="intro__department-item">
-                <div class="intro__department-content">
-                    <i class="fas fa-money-bill-alt"></i>
-                    <p>Economics</p>
-                </div>
-            </div>
-            <div class="intro__department-item">
-                <div class="intro__department-content">
-                    <i class="fas fa-money-bill-alt"></i>
-                    <p>Biology</p>
-                </div>
-            </div>
-            <div class="intro__department-item">
-                <div class="intro__department-content">
-                    <i class="fas fa-desktop"></i>
-                    <p>Computing</p>
-                </div>
-            </div>
-            <div class="intro__department-item">
-                <div class="intro__department-content">
-                    <i class="fas fa-mouse-pointer"></i>
-                    <p>Web Design</p>
-                </div>
+            <div class="container">
+                <a href="#department-item-1" class="intro__department-item">
+                    <div class="intro__department-content">
+                        <i class="fas fa-male"></i>
+                        <p>Socioligy</p>
+                    </div>
+                </a>
+                <a href="#department-item-2" class="intro__department-item">
+                    <div class="intro__department-content">
+                        <i class="fas fa-suitcase"></i>
+                        <p>Bussiness</p>
+                    </div>
+                </a>
+                <a href="#department-item-3" class="intro__department-item">
+                    <div class="intro__department-content">
+                        <i class="fas fa-code"></i>
+                        <p>Web Dev</p>
+                    </div>
+                </a>
+                <a href="#department-item-4" class="intro__department-item">
+                    <div class="intro__department-content">
+                        <i class="fas fa-flask"></i>
+                        <p>Science</p>
+                    </div>
+                </a>
+                <a href="#department-item-5" class="intro__department-item">
+                    <div class="intro__department-content">
+                        <i class="fas fa-money-bill-alt"></i>
+                        <p>Economics</p>
+                    </div>
+                </a>
+                <a href="#department-item-6" class="intro__department-item">
+                    <div class="intro__department-content">
+                        <i class="fas fa-money-bill-alt"></i>
+                        <p>Biology</p>
+                    </div>
+                </a>
+                <a href="#department-item-7" class="intro__department-item">
+                    <div class="intro__department-content">
+                        <i class="fas fa-desktop"></i>
+                        <p>Computing</p>
+                    </div>
+                </a>
+                <a href="#department-item-8" class="intro__department-item">
+                    <div class="intro__department-content">
+                        <i class="fas fa-mouse-pointer"></i>
+                        <p>Web Design</p>
+                    </div>
+                </a>
             </div>
             <div class="clear"></div>
         </div>
     </section>
 
     <section class="stat">
-        <div class="stat__item">
-            <div class="stat__content">
-                <div class="stat__counter">
-                    60
-                </div>
-                <div class="stat__text">
-                    <p>Professional Intructors</p>
-                </div>
-            </div>
-        </div>
-        <div class="stat__item">
-            <div class="stat__content">
-                <div class="stat__counter">
-                    18
-                </div>
-                <div class="stat__text">
-                    <p>New courses every year</p>
+        <div class="container">
+            <div class="stat__item">
+                <div class="stat__content">
+                    <div class="stat__counter">
+                        60
+                    </div>
+                    <div class="stat__text">
+                        <p>Professional Intructors</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="stat__item">
-            <div class="stat__content">
-                <div class="stat__counter">
-                    34
-                </div>
-                <div class="stat__text">
-                    <p>Live sessions every month</p>
-                </div>
-            </div>
-        </div>
-        <div class="stat__item">
-            <div class="stat__content">
-                <div class="stat__counter">
-                    20
-                </div>
-                <div class="stat__text">
-                    <p>Registered Students</p>
+            <div class="stat__item">
+                <div class="stat__content">
+                    <div class="stat__counter">
+                        18
+                    </div>
+                    <div class="stat__text">
+                        <p>New courses every year</p>
+                    </div>
                 </div>
             </div>
+            <div class="stat__item">
+                <div class="stat__content">
+                    <div class="stat__counter">
+                        34
+                    </div>
+                    <div class="stat__text">
+                        <p>Live sessions every month</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stat__item">
+                <div class="stat__content">
+                    <div class="stat__counter">
+                        20
+                    </div>
+                    <div class="stat__text">
+                        <p>Registered Students</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
     </section>
 
     <section class="testimonials">
         <div class="testimonials__bg-img">
             <div class="testimonials__bg-img--overlay"></div>
         </div>
+        
         <div class="testimonials__content">
             <div class="testimonials__left-content">
                 <h2>Hear what our students have to say</h2>
@@ -213,7 +222,7 @@
             </div>
             <div class="testimonials__right-content">
                 <div class="testimonials__thumbnail">
-                    <img src="./images/c3.jpg" alt="">
+                    <img src="./images/c3.jpg" class="img-fluid" alt="">
                 </div>
                 <h2>Jessey Rosey</h2>
                 <h3>Student</h3>
@@ -227,7 +236,7 @@
     </section>
 
     <section class="blogs">
-        <div class="blogs__lastest-post">
+        <div class="container blogs__lastest-post">
             <h2>Lastest Posts</h2>
             <div class="blogs__list-posts">
                 <div class="blogs__post-item">
@@ -235,7 +244,7 @@
                         <img src="./images/g9.jpg" alt="">
                     </div>
                     <div class="blogs__description">
-                        <h3>Summer Course Starts</h3>
+                        <a href="#">Summer Course Starts</a>
                         <h4>April 25, 2020</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, similique!...</p>
                     </div>
@@ -247,7 +256,7 @@
                         <img src="./images/g10.jpg" alt="">
                     </div>
                     <div class="blogs__description">
-                        <h3>About Artificial Intelligence</h3>
+                        <a href="#">About Artificial Intelligence</a>
                         <h4>March 25, 2020</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, similique!...</p>
                     </div>
@@ -259,7 +268,7 @@
                         <img src="./images/g8.jpg" alt="">
                     </div>
                     <div class="blogs__description">
-                        <h3>New Exam Schedules</h3>
+                        <a href="#">New Exam Schedules</a>
                         <h4>February 25, 2020</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, similique!...</p>
                     </div>
@@ -271,7 +280,7 @@
             </div>
             <div class="clear"></div>
         </div>
-        <div class="blogs__upcoming-events">
+        <div class="container blogs__upcoming-events">
             <h2>Upcoming Events</h2>
             <div class="blogs__event-item">
                 <div class="blogs__event-thumbnail float-left">
@@ -287,8 +296,9 @@
                     </ul>
                 </div>
                 <div class="blogs__event-content float-left">
-                    <h3>Luctus et ultrices posuere</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit architecto, voluptatem minus amet neque odio quod laboriosam voluptates corrupti eligendi voluptate enim veniam magnam quam.</p>
+                    <a href="#">Luctus et ultrices posuere</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit architecto, voluptatem minus amet
+                        neque odio quod laboriosam voluptates corrupti eligendi voluptate enim veniam magnam quam.</p>
                     <p class="blogs__event-time-place">
                         <span>07:00 - 10:00</span>|<span>Melbourne, Australia</span>
                     </p>
@@ -309,8 +319,9 @@
                     </ul>
                 </div>
                 <div class="blogs__event-content float-left">
-                    <h3>Nulla mollis dapibus nunc, ut</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit architecto, voluptatem minus amet neque odio quod laboriosam voluptates corrupti eligendi voluptate enim veniam magnam quam.</p>
+                    <a href="#">Nulla mollis dapibus nunc, ut</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit architecto, voluptatem minus amet
+                        neque odio quod laboriosam voluptates corrupti eligendi voluptate enim veniam magnam quam.</p>
                     <p class="blogs__event-time-place">
                         <span>07:00 - 10:00</span>|<span>Melbourne, Australia</span>
                     </p>

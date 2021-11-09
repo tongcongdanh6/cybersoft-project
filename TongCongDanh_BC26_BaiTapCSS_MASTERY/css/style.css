@@ -23,7 +23,6 @@ button {
     border: 0;
     border-radius: 10px;
     font-weight: bold;
-    /* font-size: 18px; */
     padding: 15px 30px;
     cursor: pointer;
 }
@@ -41,12 +40,13 @@ button:hover {
     float: left;
 }
 
+.img-fluid {
+    max-width: 100%;
+}
 
 
 .header__contact {
-    overflow: auto;
     background-color: #012047;
-    padding: 0px 250px;
 }
 
 .header__contact-left {
@@ -57,7 +57,7 @@ button:hover {
 }
 
 .header__contact-icons {
-    padding: 19px;
+    padding: 11px;
     float: left;
 }
 .header__contact-right {
@@ -66,9 +66,9 @@ button:hover {
 .header__contact-applynow {
     display: inline-block;
     background-color: #fdc801;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
-    padding: 19px;
+    padding: 11px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -78,7 +78,7 @@ button:hover {
 }
 
 .header__nav {
-    padding: 20px 250px;
+    padding: 20px 0px;
 }
 .header__nav-logo {
     display: inline-block;
@@ -128,22 +128,28 @@ button:hover {
     bottom: -200px;
     text-align: center;
     width: 100%;
-    padding: 0 250px;
 }
+
+.carousel__features .container {
+    position: absolute;
+    bottom: -200px;
+    text-align: center;
+    width: 100%;
+}
+
 .carousel__features-item {
     width: 33.33%;
     float: left;
-    
 }
 
-.carousel__features-container .carousel__features-item:first-child {
+.carousel__features .container .carousel__features-item:first-child {
     padding-right: 20px;
 }
-.carousel__features-container .carousel__features-item:last-child {
+.carousel__features .container .carousel__features-item:last-child {
     padding-left: 20px;
 }
 
-.carousel__features-container .carousel__features-item {
+.carousel__features .container .carousel__features-item {
     padding: 0 10px;
 }
 
@@ -191,7 +197,6 @@ button:hover {
 
 .intro {
     background-color: rgba(0, 0, 0, 0.01);
-    padding: 0 250px;
 }
 
 .intro__welcome {
@@ -243,16 +248,21 @@ button:hover {
     width: 50%;
 }
 
+.intro__welcome-right-content img {
+    max-width: 100%;
+}
+
 .intro__department {
-    padding: 150px 0;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .intro__department-item {
     cursor: pointer;
     float: left;
     width: 25%;
-    padding-right: 30px;
-    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 .intro__department-content {
     color: #fff;
@@ -277,13 +287,13 @@ button:hover {
 
 .stat {
     background-color: #f6f6f6;
-    padding: 70px 250px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .stat__item {
     float: left;
     width: 25%;
-    /* padding-right: 80px; */
 }
 
 .stat__counter {
@@ -307,7 +317,7 @@ button:hover {
 
 .testimonials {
     position: relative;
-    height: 600px;
+    height: 550px;
 }
 
 .testimonials__bg-img {
@@ -382,12 +392,16 @@ button:hover {
 
 .blogs {
     background-color: #f6f6f6;
-    padding: 120px 250px;
 }
 
 .blogs h2 {
     font-size: 40px;
     margin-bottom: 50px;
+}
+
+.blogs .container {
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .blogs__lastest-post {
@@ -425,6 +439,20 @@ button:hover {
     font-weight: normal;
     padding: 10px 0;
 }
+
+.blogs__description a {
+    font-weight: bolder;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+}
+
+.blogs__description a:hover {
+    color: #fdc801;
+}
+
+
 
 .blogs__description p {
     line-height: 1.5;
@@ -500,6 +528,17 @@ button:hover {
     line-height: 1.5;
     color: #8e8e8e;
     margin-top: 15px;
+}
+
+.blogs__event-content a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+.blogs__event-content a:hover {
+    color: #fdc801;
 }
 
 .blogs__event-time-place span:first-child {
